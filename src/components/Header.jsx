@@ -1,23 +1,44 @@
+import { NavLink } from 'react-router-dom'
 import LogoImg from './LogoImg.jsx'
 import iconCall from '../assets/Iconcall.svg'
-// import logo from '/vite.svg'
 
 export default function Header() {
+  const navLinkClass = ({ isActive }) =>
+    // `transition-all duration-300 hover:text-[#5937E0] hover:font-bold ${ ${
+    //   // isActive ? 'font-bold text-[#5937E0]' : ''
+    //   isActive ? 'font-bold text-black' : ''
+    // }`
+
+    `transition-all duration-300 hover:text-black hover:font-bold ${
+      isActive ? 'font-bold text-black' : ''
+  }`
+
   return (
     <header className="bg-white text-black py-4 ">
       <div className="container-fluid flex justify-between items-center px-6">
         <div>
-          <a href="" className='flex row gap-5'>
-              <LogoImg />
-              <h1 className="text-2xl font-bold">Car Renta</h1>
-          </a>
+          <NavLink to="/" className="flex row gap-5">
+            <LogoImg />
+            <h1 className="text-2xl font-bold">Car Renta</h1>
+          </NavLink>
         </div>
+
         <nav className="space-x-6">
-          <a href="#" className="hover:font-bold">Home</a>
-          <a href="#" className="hover:font-bold">Vehicules</a>
-          <a href="#" className="hover:font-bold">Details</a>
-          <a href="#" className="hover:font-bold">About Us</a>
-          <a href="#" className="hover:font-bold">Contact Us</a>
+          <NavLink to="/" className={navLinkClass}>
+            Home
+          </NavLink>
+          <NavLink to="/cars" className={navLinkClass}>
+            Vehicles
+          </NavLink>
+          <NavLink to="/details" className={navLinkClass}>
+            Details
+          </NavLink>
+          <NavLink to="/about" className={navLinkClass}>
+            About
+          </NavLink>
+          <NavLink to="/contact" className={navLinkClass}>
+            Contact
+          </NavLink>
         </nav>
 
         <div className="flex row">
@@ -27,7 +48,6 @@ export default function Header() {
             <strong>+996 247-1680</strong>
           </span>
         </div>
-
       </div>
     </header>
   );
