@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "name": "BMW M3",
+    "brand": "BMW",
+    "group": "Sedan",
+    "pricePerDay": 25,
+    "currency": "USD",
+    "mainImage": "/images/cars/bmw_m3_3.png",
+    "gallery": [
+      "/images/cars/bmw_m3_2.png",
+        "/images/cars/bmw_m3.png"
+    ],
+    "technicalSpecification": {
+      "gearBox": "Automatic",
+      "fuel": "Petrol",
+      "doors": 4,
+      "airConditioner": true,
+      "seats": 5,
+      "distance": 500
+    },
+    "equipment": [
+      "ABS",
+      "Air Bags",
+      "Cruise Control",
+      "Air Conditioner"
+    ],
+    "location": "Kinshasa",
+    "isFeatured": true
+  },
+  {
+    "id": 2,
+    "name": "Audi A4",
+    "brand": "Audi",
+    "group": "Sedan",
+    "pricePerDay": 35,
+    "currency": "USD",
+    "mainImage": "/images/cars/audi_a4_2023.jpg",
+    "gallery": [
+      "/images/cars/audi_a4_2023_2.webp"
+    ],
+    "technicalSpecification": {
+      "gearBox": "Automatic",
+      "fuel": "Diesel",
+      "doors": 4,
+      "airConditioner": true,
+      "seats": 5,
+      "distance": 600
+    },
+    "equipment": [
+      "ABS",
+      "Air Bags",
+      "Cruise Control",
+      "GPS",
+      "Rear Camera"
+    ],
+    "location": "Kisangani",
+    "isFeatured": false
+  },
+  {
+    "id": 3,
+    "name": "Audi A4",
+    "brand": "Audi",
+    "group": "Cabriolet",
+    "pricePerDay": 35,
+    "currency": "USD",
+    "mainImage": "/images/cars/audi-main.png",
+    "gallery": [
+      "/images/cars/audi-1.png",
+      "/images/cars/audi-2.png",
+      "/images/cars/audi-3.png"
+    ],
+    "technicalSpecification": {
+      "gearBox": "Automatic",
+      "fuel": "Diesel",
+      "doors": 4,
+      "airConditioner": true,
+      "seats": 5,
+      "distance": 600
+    },
+    "equipment": [
+      "ABS",
+      "Air Bags",
+      "Cruise Control",
+      "GPS",
+      "Rear Camera"
+    ],
+    "location": "Kisangani",
+    "isFeatured": false
+  }
+]
